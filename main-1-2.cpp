@@ -1,0 +1,24 @@
+#include <iostream>
+
+extern int is_identity(int array[10][10]);
+
+int main(){
+    int array[10][10] = {
+        {1,0,0,0,0,0,0,0,0,0},
+        {0,1,0,0,0,0,0,0,0,0},
+        {0,0,1,0,0,0,0,0,0,0},
+        {0,0,0,1,0,0,0,0,0,0},
+        {0,0,0,0,1,0,0,0,0,0},
+        {0,0,0,0,0,1,0,0,0,0},
+        {0,0,0,0,0,0,1,0,0,0},
+        {0,0,0,0,0,0,0,1,0,0},
+        {0,0,0,0,0,0,0,0,1,0},
+        {0,0,0,0,0,0,0,0,0,1}
+    };
+    if (is_identity(array) == 1){
+        std::cout << "Is an identity matrix" << std::endl;
+    } else {
+        std::cout << "Not an identity matrix" << std::endl;
+    }
+    return 0;
+}
