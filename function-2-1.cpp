@@ -10,5 +10,5 @@ void print_binary_str(std::string decimal_number){
         n /= 2;
     }
 
-    std::cout << "binary value = " << binary << std::endl;
+    std::cout << binary << std::endl;
 }
