@@ -10,7 +10,6 @@ private:
 public:
     Musician();
     Musician(std::string instrument, int experience);
-    std::string get_name();
     std::string get_instrument();
     int get_experience();
     std::string describe_musician();
