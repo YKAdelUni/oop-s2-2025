@@ -7,6 +7,7 @@ using namespace std;
 Orchestra::Orchestra(){
     numMusicians = 0;
     musicians = nullptr;
+    maxMusicians = 0;
 }           
 
 // constructor for an orchestra of given numMusicians
