@@ -23,12 +23,17 @@ int Orchestra::get_current_number_of_members(){
 // returns true if any musician in the orchestra plays the specified instrument
 // otherwise returns false
 bool Orchestra::has_instrument(string instrument){
+    int hasInstrument;
     for (int i = 0; i < size; i++){
-        if (instrument == musicians[i].get_instrument()){
-            return true;
+        if (instrument != musicians[i].get_instrument()){
+            hasInstrument++;
         }
     }
-    return false;
+    if (hasInstrument == size){
+        return false;
+    } else {
+    return true;
+    }
 } 
 
 // returns the array of members of the orchestra
@@ -41,6 +46,7 @@ Musician *Orchestra::get_members(){
 bool Orchestra::add_musician(Musician new_musician){
     if (size < maxSize){
         musicians++;
+        size++;
         return true;
     } else {
         return false;
