@@ -14,7 +14,7 @@ Orchestra::Orchestra(){
 Orchestra::Orchestra(int size){
     this->maxMusicians = size;
     this->numMusicians = 0;
-    this->musicians = new Musician[numMusicians];
+    this->musicians = new Musician[size];
 }   
 
 // returns the number of musicians who have joined the orchestra
