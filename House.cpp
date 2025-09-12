@@ -16,6 +16,7 @@ House::House(int maxAppliances){
 bool House::addAppliance(Appliance* appliance){
     if (numAppliances < maxAppliances){
         appliances[numAppliances] = appliance;
+        std::cout << "Successfully added appliance to house" << std::endl;
         numAppliances++;
         return true;
     } else {

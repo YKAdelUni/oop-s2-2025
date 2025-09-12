@@ -10,6 +10,7 @@ Fridge::Fridge(){
 Fridge::Fridge(int powerRating, double volume){
     this->powerRating = powerRating;
     this->volume = volume;
+    isOn = false;
 }
 
 void Fridge::setVolume(double volume){this->volume = volume;}
